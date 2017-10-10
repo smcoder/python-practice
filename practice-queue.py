@@ -1,4 +1,4 @@
-import Queue
+import queue
 import threading
 import time
 
@@ -29,7 +29,7 @@ def process_data(threadName, q):
 threadList = ["thread-1", "thread-2", "thread-3"]
 nameList = ["One", "Two", "Three", "Four", "Five"]
 queueLock = threading.Lock()
-workQueue = Queue.Queue(10)
+workQueue = queue.Queue(10)
 threads = []
 threadId = 1
 
